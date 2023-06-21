@@ -12,10 +12,13 @@ public class ChromeRunner {
     public void openBrowser(){
         driver.manage().window().maximize();
         driver.get("https://saba.com.ge/");
+
     }
     @AfterTest
     public void closeBrowser(){
-        driver.close();
+        if (driver !=null){
+            driver.quit();
+        }
     }
 
 }
