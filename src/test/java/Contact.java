@@ -42,7 +42,7 @@ public class Contact extends ChromeRunner {
         softAssertion.assertTrue(driver.getCurrentUrl().contains("contact"));
 
 
-        
+        //Test
 
 
     }
