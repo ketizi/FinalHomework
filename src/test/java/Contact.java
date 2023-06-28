@@ -1,8 +1,12 @@
+import StepObject.LogInWithCorrectData;
 import StepObject.SentMessageSteps;
 import Utils.ChromeRunner;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
+import static DataObject.LogInFieldData.logInField;
+import static DataObject.LogInFieldData.passwordField;
 import static DataObject.MessageFieldData.*;
 
 
@@ -41,10 +45,17 @@ public class Contact extends ChromeRunner {
         softAssertion.assertEquals(driver.getTitle(), "\"საბა\" - კონტაქტი");
         softAssertion.assertTrue(driver.getCurrentUrl().contains("contact"));
 
+    }
 
-        //Test
+    @Test
 
-
+    public void LogInStep() throws InterruptedException {
+        LogInWithCorrectData step3 = new LogInWithCorrectData(driver);
+        step3.logInButton();
+        step3.emailButton( logInField );
+        step3.passwordButton(passwordField);
+        step3.finalLogInButton();
+        Thread.sleep(5000);
     }
 
     }

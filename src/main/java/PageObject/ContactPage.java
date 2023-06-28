@@ -12,6 +12,6 @@ public class ContactPage {
              submitButton = By.cssSelector("#bodyWrapper > div:nth-child(1) > div:nth-child(2) > div > div.fr > form > input.btn.fr"),
              questionButton = By.cssSelector("#bodyWrapper > div:nth-child(1) > div:nth-child(2) > div > a > div");
 
-
-
 }
+
+
