@@ -41,6 +41,9 @@ public class Contact extends ChromeRunner {
         softAssertion.assertEquals(driver.getTitle(), "\"საბა\" - კონტაქტი");
         softAssertion.assertTrue(driver.getCurrentUrl().contains("contact"));
 
+        //  softAssertion.assertEquals(driver.getTitle(), "\"საბა\" - კონტაქტი");
+        //        softAssertion.assertTrue(driver.getCurrentUrl().contains("contact"));
+
 
     }
 
