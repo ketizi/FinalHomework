@@ -42,8 +42,7 @@ public class Contact extends ChromeRunner {
         softAssertion.assertTrue(driver.getCurrentUrl().contains("contact"));
 
 
-
-        // this is commit // this is commit // this is commit // this is commit // this is commit
+        
 
 
     }
